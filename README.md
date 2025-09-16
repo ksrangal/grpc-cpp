@@ -2,9 +2,11 @@ ChatterBox
 
 Client Side 
 ------------
-./client server-addr talk | listen | chat
+./client server-addr poke | talk | listen | chat
 
 server-addr - server connect address 
+
+poke        - exchange one msg
 
 talk        - client stream
 
