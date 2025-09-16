@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package chatterbox; 
+
+// This my my service
+service ChatterBox {
+
+  // simple api
+  rpc chat(Message) returns (Message); 
+
+  // Server side streaming  
+  rpc chatServerStream(Message) returns (stream Message); 
+
+  // Client side streaming 
+  rpc chatClientStream(stream Message) returns (Message); 
+
+  // Bidirectional streaming
+  rpc chatStream(stream Message) returns (stream Message); 
+}
+
+// this is the message client/server exhange. 
+message Message {
+  string message = 1; 
+}
