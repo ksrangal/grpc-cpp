@@ -105,13 +105,3 @@ Replace `localhost:50051` with your server’s host and port if different.
 - Simple, modular design for educational use.  
 
 ---
-
-## 📌 Future Enhancements
-
-- Add TLS / authentication support  
-- Add persistence layer for chat history  
-- Integrate Prometheus metrics for monitoring  
-- Add retries and error handling for robustness  
-- Extend protocol with JSON / binary payloads  
-
----
